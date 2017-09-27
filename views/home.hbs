@@ -1,0 +1,24 @@
+{{!-- bs3-jumbotron --}}
+<div class="jumbotron">
+    <div class="container">
+        {{title}}
+        <h1>Hello, {{user}}</h1>
+        <p>Contents ...</p>
+        <p>
+            <a class="btn btn-primary btn-lg">Learn more</a>
+        </p>
+    </div>
+</div>
+
+{{#each images}}
+    {{!-- bs3-well-sm --}}
+    <div class="well well-sm">
+        {{name}}
+    </div>
+
+    {{!-- a --}}
+    <a href="{{link}}">{{link}}</a>
+
+    {{!-- bs3-image --}}
+    <img width="200" src="{{link}}" class="img-responsive" alt="Image">
+{{/each}}
